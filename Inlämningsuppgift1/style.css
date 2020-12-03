@@ -1,0 +1,365 @@
+    
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+}
+.topmenu-container {
+    max-width: 960px;
+    margin: auto;   
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.topmenu {    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 0.5em;  
+}
+.fab {
+    font-size: 0.8em;
+    padding: 0.5em;
+    color: #2BAAEC;
+    text-decoration: none;
+}
+.fab:hover {
+    color: #25E6C8
+}
+.far {
+    color: #2BAAEC;
+    margin-right: 0.2em;
+}
+.topmenu-info-text{
+    font-size: 0.8em;
+    color: #626262;
+    font-family: 'Roboto', sans-serif; 
+}
+.border-header {
+    border-top: 1px solid #707070;
+    opacity: 50%;
+}
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bars {
+    padding: 0em 1em;
+    font-size: 2em;
+    color: #363636;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 2em 2em;
+  text-decoration: none;
+  display: block;
+  font-family: 'Roboto', sans-serif; 
+  color: #363636;
+}
+.dropdown-content a:hover {
+    background-color: #dadadab7;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.main-menu-list a {
+    list-style: none;
+    display: inline;
+    margin-left: 2em;  
+    font-family: 'Roboto Slab', serif;
+    color: #363636;
+    text-decoration: none;
+}
+.showcase {
+    background-color: #DEDEDE;
+    padding-top: 1.5em; 
+}
+.showcase-container{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.showcase-content{
+    display: flex; 
+    justify-content: center; 
+}
+.showcase-text-box {
+    font-family: 'Roboto Slab', serif;
+    margin-left: 6em;
+    margin-top: 4em;
+    max-width: 30em;  
+}
+.showcase-text-box h1 {
+    color: #363636;
+    font-size: 3em;
+    font-weight: 500;
+}
+.showcase-text-box p {
+    color: #626262;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+.showcase-button {
+    border-radius: 8px;
+    background-color: #25E6C8;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 1em 3em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 0.7em 0.1em;
+    cursor: pointer;
+}
+.showcase-button:hover {
+    background-color: #2baaec;
+}
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;  
+    margin-bottom: -6em;     
+}
+.about-us-container {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-us-box {
+    width: 30em;
+    margin-right: 4em;
+}
+.about-us-box span {
+    color: #2baaec;
+}
+.about-us-caption {
+    width: 30em;
+    margin-bottom: 3em; 
+}
+.about-us-caption h2 {
+    color: #363636;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    color: #363636;
+    font-size: 2em;
+}
+.about-us-border {
+    border: 2px solid #25e6c8;
+    background-color: #25e6c8;
+    margin-top: -2em;
+}
+.about-us-info {
+    font-family: 'Roboto', sans-serif;
+    color: #626262;
+    line-height: 1.3rem;
+    word-spacing: 2px;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+.about-us-info2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif;   
+}
+.about-us-info2 h2 {
+    font-size: 2em;
+    color: #2baaec;
+    font-weight: 500;
+}
+.about-us-info2 p {
+    font-size: 0.5em;
+    font-weight: 500;
+    color: #626262;
+}
+.services {
+    background-color: #F7F7F7;
+}
+.services-caption {
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 3em;
+    padding: 1em;  
+}
+.services-caption h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    color: #363636; 
+    font-size: 1.8em;
+    margin-top: 2em;
+}
+.services-border {
+    border: 2px solid #25e6c8;
+    background-color: #25e6c8;
+    width: 20em;
+    margin: auto;  
+}
+.services-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 6em;
+}
+.services-info-box-icon {
+    display: flex;
+    align-items: center;
+    width: 5.5em;
+    height: 5.5em;
+    background-color: #25E6C8;
+    margin: auto;
+    border-radius: 100%;
+    margin-bottom: 2em;
+}
+.services-info-box-icon svg {
+    margin: auto;    
+}
+.services-info-box  {
+    text-align: center;
+    padding: 4em 4em 4em 4em;
+    margin: 0.5em;
+    width: 23em;
+    height: auto; 
+    background-color: #FFFFFF;
+}
+.services-info-box a {
+    text-decoration: none;
+}
+.services-info-box h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #363636;
+}
+.services-info-box p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #626262;
+}
+.services-info-box:hover {
+    box-shadow: 0 4px 20px 0 rgba(94, 94, 94, 0.2), 0 6px 20px 0 rgba(90, 90, 90, 0.19);
+    border-radius: 5px;
+    transition: all 0.5s;   
+}
+.services-info-box:hover .services-info-box-icon{
+    background-color: #2BAAEC;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 2px 10px #2ba8ec44;
+}
+.appointment {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    background-color: #2BAAEC;
+    opacity: 80%;
+    padding: 3.5em;
+}
+.appointment-button {
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-weight: 900;
+    color: #2BAAEC;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    border: none;
+    padding: 0.7em 2em;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+}
+.appointment-button:hover{
+    background-color: #2BAAEC;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    transition: all 0.5s;
+}
+.appointment h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.appointment-icons .fab {
+    color: #FFFFFF;
+    padding: 1em;
+    margin-top: 1em;
+}
+.footer h4 {
+    text-align: center; 
+    margin: auto;
+    background-color: #2BAAEC;
+    padding: 2em;
+    color: #f3fbff94;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 0.8em;    
+}
+
+@media screen and (max-width: 700px) {  
+    .main-menu svg {
+        width: 10em;
+        margin-left: 1em;
+    }
+    .showcase-svg, .about-us-svg, .topmenu, .main-menu-list {
+        display: none;
+    }
+    .showcase-text-box h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .showcase-text-box p {
+        text-align: center;
+    }
+    .showcase-text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+    }
+    .about-us-caption, .about-us-border {
+        margin: auto;
+        text-align: center;
+        font-size: 0.6em;
+    }
+    .about-us-info {
+        text-align: center;
+        margin: 1.5em;
+    }
+    .about-us-box {
+        margin: auto;
+    }
+    .about-us-info2 {
+       display:inline;
+       text-align: center;
+    }
+    .services-caption {
+        font-size: 0.8em;
+    }
+    .appointment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .appointment h2 {
+        text-align: center;
+    } 
+}
+
+@media screen and (min-width: 700px) {
+    .appointment-icons {
+        display: none;
+    }
+    .bars {
+        display: none;
+    }
+}
