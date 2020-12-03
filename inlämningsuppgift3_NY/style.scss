@@ -10,13 +10,14 @@ body,html {
    height: 100vh;
 }
 .form-box {
-    h2 {
+    h1 {
         color:  rgb(236, 73, 73);
         font-weight: 500;
         background: linear-gradient(90deg, rgba(255,124,219,1) 0%, rgba(255,34,34,1) 100%);
-        padding: 1.5em;
+        padding: 1em;
         text-align: center;
         color: #ffffff;
+        font-size: 3em;
     }
 }
 .bg-pink {
