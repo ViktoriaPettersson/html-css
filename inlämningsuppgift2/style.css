@@ -1,0 +1,630 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/blue_background_crop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+p {
+    color: #8A8A8A;
+    font-size: 0.8em;
+}
+#logo {
+    font-family: 'Poppins' !important;
+}
+.nav-button {
+     display: none;
+     margin-left: 2em;
+     background-color: #FFBB00;
+     border: none;
+     border-radius: 0.5em;
+     width: 8em;
+} 
+.nav-button:hover {
+    background-color: #ffbb00;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.navbar-nav .nav-item{
+    margin-left: 2em;
+    position: relative;
+}  
+.nav-link{
+    color: #3f3f3f !important; 
+    font-weight: bold;
+}
+.nav-link:hover {
+    color:  #FFBB00 !important;
+}
+.nav-link:hover::after {
+    position: absolute;
+    content: "";
+    background-color: #FFBB00;
+    width: 2em;
+    height: 0.2em;
+    left: 0.5em;
+    top: 32px;
+}
+.bg-light {
+    background: transparent !important;
+}
+.bg-light.scrolled {
+    background: #3096FE !important;
+} 
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    text-align: center;
+    margin-top: 2em;
+}
+.showcase-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.watch-video {
+    display: flex;
+}
+.fa-play {
+    color: #ffffff;
+    padding: 0.5em;
+    background-color: #FFBB00;
+    border-radius: 50%;
+}
+.play-border {
+    border: 1px solid #FFBB00;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+.play-border:hover {
+    animation-name: stretch; 
+    animation-duration: 2.0s; 
+    animation-timing-function: ease-out; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite; 
+    animation-play-state: running; 
+}
+@keyframes stretch { 
+    0% { 
+        transform: scale(.8); 
+        background-color: transparent; 
+        border-radius: 100%; 
+    } 
+
+    50% { 
+        background-color: transparent;
+    } 
+
+    100% { 
+        transform: scale(1.2); 
+        background-color: transparent;
+    } 
+} 
+.watch-video p {
+    margin: auto;
+}
+.showcase-btns button {
+    border-radius: 0.7em;
+    padding: 0.5em 1em 0.5em 1em;
+}
+.showcase-btns-item {
+    margin-right: 1em;
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.showcase-btns-hover:hover {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.showcase-btns p {
+    margin-left: 1em;
+}
+.showcase-text {
+    font-family: 'Poppins', sans-serif;
+}
+.showcase-text h1 {
+    color: #ffbb00;
+}
+.showcase-text p {
+    color: rgb(0,  0, 0);
+}
+.sc-iphone-images {  
+    margin-top: 2em;
+}
+.iphone-showcase-carousel1 {
+    position: relative;
+    left: 2em;      
+    z-index: 2;
+}
+.iphone-showcase-carousel2 {
+    position: relative;   
+    right: 2em; 
+    bottom: 2em;
+    z-index: 1;
+}
+.iphone-img {
+    width: 40%;
+    height: auto;
+    margin-top: 2em;
+}
+.ec-logo {
+    display: none;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+}
+.about-image{
+    margin-top: 5em;  
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.about-iphone {
+    position: absolute;
+    max-width: 40%;
+    left: 30%;
+    top: 0%;
+}
+.bg-circle {
+    max-width: 80%;
+    position: relative;
+    animation: bg-move 15s infinite;
+}
+@keyframes bg-move {
+    50% {transform: rotate(180deg);}
+}
+.social-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}   
+.googleplay, .app-store{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 11em;
+    padding: 0.5em 0.5em 0em 0.5em;
+    border-radius: 0.5em;
+    background-color: #F8F8F8;
+    margin-bottom: 1em;
+}
+ a:hover {
+     text-decoration: none;
+}
+.fa-google-play {
+    font-size: 1.8em;
+}
+.fa-apple {
+    font-size: 2em;
+    color: #333333;
+}
+.googleplay h6, .app-store h6 {
+    font-size: 0.7em;
+    color: #6B6B6B;
+}
+.googleplay h3, .app-store h3 {
+    font-size: 1em;
+    color: #333333;
+}
+.background-lightgrey {
+    background-color: #FCFCFC;
+} 
+.features {
+    margin-top: 6em;
+}
+.features-info h2 {
+    font-weight: bold;
+}
+.features-flex {
+    display: flex;
+    padding: 0.5em;
+}
+.features-item h5 {
+    font-size: 0.9em;
+}
+.yellow-heading {
+    width: fit-content;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    color: #FFBB00;
+    background-color: #FCF2D6;
+    border-radius: 0.5em;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-top: 2em;
+}
+.features-flex p {
+    line-height: 1.2em;
+    margin-right: 1em;
+}
+.features-icon {
+    padding: 0.5em;
+    margin-right: 1em;
+    border-radius: 0.2em;
+    background-color: #FCF2D6;
+}
+.features-images img {
+    width: 30em;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+.screens-heading, .statistics-heading, .contact-heading {
+    margin: auto;
+    max-width: 25em;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+.img-slider {
+    text-align: center;
+} 
+.small {
+    width: 65%;
+}
+.carousel-cell {
+    width: 28%;
+    height: auto;
+    background: transparent;
+}
+.statistics-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.number-box h3, .number-box h6 {
+    text-align: center;
+}
+.number-box {
+    margin: 1em;
+}
+.number-box h3 {
+    color: #3096FE;
+}
+.download-bg {
+    background-image: url(/images/download-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.download-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+}
+.download > h2 {
+    color: #ffffff;
+    max-width: 14em;
+    font-size: 2.5em;
+}
+.download p {
+    color: #ffffff;
+    max-width: 40em;
+}
+.download > .social-btns {
+    padding-bottom: 2em;
+}
+.mask-images {
+    display: none;
+}
+form {
+    max-width: 60em;
+    margin: auto;
+}
+textarea {
+    resize: none;
+}
+input, textarea {
+    background-color: #FBFBFB !important;
+    border: none !important;
+}
+input::-webkit-input-placeholder {
+    color: #a5a5a5 !important;
+    font-size: 0.8em;
+}
+textarea::-webkit-input-placeholder {
+    color: #a3a3a3 !important;
+    font-size: 0.8em;
+}
+.form-button {
+    width: 10em;
+    border-radius: 0.5em;
+    margin-bottom: 4em;
+    background-color: #3096FE;
+    border: none;
+    padding: 0.7em 1em 0.7em 1em;
+    position: relative;
+    transition: all .35s;
+}
+.form-button span{
+    position: relative;
+    z-index: 2;
+}
+.form-button:after{
+    position: absolute;
+    border-radius: 0.5em;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:  #005db9;
+    transition: all .35s;
+}
+.form-button:hover{
+    color: #fff;
+  }
+  
+.form-button:hover:after{
+    width: 100%;
+  }
+.footer-bg {
+    background-image: url(/images/Bg-footer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer {
+    margin-top: 2em;
+    padding-top: 1em;
+}
+.footer-links {
+    margin-bottom: 2em;
+}
+.footer-links a {
+    color: #ffffff;
+}
+.footer-links a:hover {
+    color: #FFBB00;
+}
+.footer-logo {
+    margin-bottom: 2em;
+}
+.footer-icons {
+    color: #ffffff;
+    margin-right: 1em;
+    width: 2em;
+    text-align: center;
+    height: 2em;
+    padding: 8px 0 0 0px;
+    border-radius: 25%;
+    background-color: #ffffff21;
+    margin-bottom: 1em;
+}
+.footer-icons:hover {
+    color: #3096FE;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+/* small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+     .statistics {
+        background-image: url(/images/Layer\ 815.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        max-width: 60em;
+        margin: auto;
+        min-height: 20em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding-top: 1em;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 35em;
+    }
+ }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+    .social-btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .googleplay {
+        margin-right: 1em;
+    }
+    .ec-logo {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 8em;
+        margin-bottom: 3em;
+    }
+    .ec-logo img {
+        max-width: 8em;
+        height: auto;
+        margin: 0.5em;
+    }
+    .statistics-number {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .mask-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 6em;
+        position: relative;
+        max-width: 40em;
+    }
+    .mask-iphone1 {
+        position: relative;
+        width: 35%;
+        left: 5%;
+    }
+    .mask-iphone2 {
+        position: absolute;
+        bottom: 0;
+        width: 35%;
+        z-index: 1;
+    }
+    .mask-iphone3 {
+        position: relative;
+        width: 35%;
+        right: 5%;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .nav-button {
+        display: block;
+    }
+    .nav-link {
+        color: #ffffff !important; 
+    }
+    .showcase {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .showcase-btns {
+        justify-content: left;
+    }
+    .showcase-text {
+        text-align: left;
+        width: 30em;
+    }
+    .item1 {order: 2;}
+    .item2 {order: 1;}
+    
+    .about {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;   
+    }
+    .about-image {
+        display: flex;
+        justify-content: end;    
+    }
+    .about-iphone {
+        position: absolute;
+        max-width: 40%;
+        left: 20%;
+        top: 0%;
+    }
+    .about-text {
+        width: 30em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .features-text {
+        width: 40em;  
+        margin-bottom: 5em;
+    }
+    .features-images img {
+        width: 100%;
+    }
+    .features-images {
+        width: 40%;   
+    }
+    .features-info {
+        width: 30em;
+    }
+    .img-slider {
+        margin-bottom: 5em;
+    }
+    .download-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    } 
+    .download {
+        width: 58em;
+    } 
+    .mask-images {
+        right: 2em;
+    }
+    .mask-iphone1 {
+        width: 50%;
+    }
+    .mask-iphone2 {
+        width: 50%;
+    }
+    .mask-iphone3 {
+        width: 50%;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {   
+    .showcase-text h1, .showcase-text p {
+        color: #ffffff;
+    }
+    .showcase-btns button {
+        background-color: transparent;
+        border: 2px solid #ffffff;
+    }
+    .dots {
+        background-image: url(/images/dots.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+}
