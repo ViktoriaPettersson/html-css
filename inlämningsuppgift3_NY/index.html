@@ -26,34 +26,50 @@
         <form class="form-box m-auto" action="#!">
             <h1 class="mb-4">Get Started!</h1>
             <div class="form-content p-5">
+              <h5>Användaruppgifter</h5>
                 <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Förnamn" value="" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Efternamn" value="" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="E-postadress" value="" />
+                  </div>
                   <div class="form-group col-md-3">
-                    <input type="text" class="form-control" placeholder="First Name" value="" />
+                    <input type="password" class="form-control" id="password" placeholder="Lösenord" />
                   </div>
                   <div class="form-group col-md-3">
-                    <input type="text" class="form-control" placeholder="Last Name" value="" />
+                    <input type="password" class="form-control" id="confirmpassword" placeholder="Bekräfta Lösenord" />
+                  </div>
+                </div>
+                <h5 class="mt-3">Address</h5>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Faktureringsadress" value="" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <input type="text" class="form-control" placeholder="postnummer" value="" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <input type="text" class="form-control" placeholder="stad" value="" />
                   </div>
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control" placeholder="Email" value="" />
+                    <input type="text" class="form-control" placeholder="Leveransadress" value="" />
                   </div>
-                  <div class="form-group col-md-6">
-                    <input type="text" class="form-control" placeholder="Billing Address" value="" />
+                  <div class="form-group col-md-3">
+                    <input type="text" class="form-control" placeholder="postnummer" value="" />
                   </div>
-                  <div class="form-group col-md-6">
-                    <input type="text" class="form-control" placeholder="Delivery Address" value="" />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <input type="password" class="form-control" id="password" placeholder="Password" />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password" />
+                  <div class="form-group col-md-3">
+                    <input type="text" class="form-control" placeholder="stad" value="" />
                   </div>
                 </div>
                 <div class="form-group mt-3">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
-                      I have accepted the <a href="#">terms and conditions</a>
+                      Jag godkänner <a href="#">användarvillkoren</a>
                     </label>
                   </div>
                 </div>
@@ -61,7 +77,7 @@
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
-                      I want to receive newsletters and special offer notices
+                      Jag godkänner nyhets- och reklamutskick  
                     </label>
                   </div>
                 </div>
